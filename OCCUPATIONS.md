@@ -1,5 +1,5 @@
 [Pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation.](https://www.hackerrank.com/challenges/occupations/problem?isFullScreen=true)<br>
-   The output column headers should be Doctor, Professor, Singer, and Actor, respectively.
+   The output column headers should be Doctor, Professor, Singer, and Actor, respectively.<br>
 Note: Print NULL when there are no more names corresponding to an occupation
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
