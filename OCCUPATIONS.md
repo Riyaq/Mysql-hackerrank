@@ -1,3 +1,20 @@
+[Write a query identifying the type of each record in the TRIANGLES table using its three side lengths.](https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true)
+
+**Solution**
+```sql
+SELECT CASE
+      WHEN (A+B<=C) OR (A+C<=B) OR (C+B<=A) THEN 'Not A Triangle'
+      WHEN (A=B) AND (B=C) AND (C=A) THEN 'Equilateral'
+      WHEN (A=B) OR (B=C) OR (A=C) THEN 'Isosceles'
+      ELSE 'Scalene'
+  END
+FROM TRIANGLES;
+```
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 [Query an alphabetically ordered list of all names in OCCUPATIONS, immediately followed by the first letter of each profession as a parenthetical](https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true)<br>
  (i.e.: enclosed in parentheses). For example: AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).<br>
 
@@ -43,7 +60,7 @@ ORDER BY COUNT(OCCUPATION), OCCUPATION;
    The output column headers should be Doctor, Professor, Singer, and Actor, respectively.<br>
 Note: Print NULL when there are no more names corresponding to an occupation
 
--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 **Input Format**
 The OCCUPATIONS table is described as follows:<br>
 <img width="333" alt="Screenshot 2024-08-06 at 7 40 11 AM" src="https://github.com/user-attachments/assets/09943705-8db7-46fb-be16-3b2d6d12ac98"><br>
