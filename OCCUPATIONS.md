@@ -15,6 +15,7 @@ FROM TRIANGLES;
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 **The PADS**
+--------------
 
 
 [Query an alphabetically ordered list of all names in OCCUPATIONS, immediately followed by the first letter of each profession as a parenthetical](https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true)<br>
