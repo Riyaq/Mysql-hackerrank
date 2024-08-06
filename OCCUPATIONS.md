@@ -4,11 +4,11 @@
 Note: Print NULL when there are no more names corresponding to an occupation.
 
 **Input Format**
-The OCCUPATIONS table is described as follows:
-<img width="333" alt="Screenshot 2024-08-06 at 7 40 11 AM" src="https://github.com/user-attachments/assets/09943705-8db7-46fb-be16-3b2d6d12ac98">
+The OCCUPATIONS table is described as follows:<br>
+<img width="333" alt="Screenshot 2024-08-06 at 7 40 11 AM" src="https://github.com/user-attachments/assets/09943705-8db7-46fb-be16-3b2d6d12ac98"><br>
 Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.
 
-**Sample Input**
+**Sample Input**<br>
 <img width="336" alt="Screenshot 2024-08-06 at 7 42 13 AM" src="https://github.com/user-attachments/assets/259d2a6e-6a09-4b53-8537-90519ca92593">
 **Sample Output**
 ```markup
