@@ -23,3 +23,27 @@ ORDER BY NAME ASC;
 ```
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. [Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than $2000 per month who have been employees for less than 10 months. Sort your result by ascending employee_id.](https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true)
+
+**Solution**
+```sql
+SELECT NAME FROM Employee
+WHERE SALARY >2000 AND MONTHS<10
+ORDER BY employee_id ASC ;
+```
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. [Write a query identifying the type of each record in the TRIANGLES table using its three side lengths.](https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true)
+
+**Solution**
+```sql
+SELECT CASE
+      WHEN (A+B<=C) OR (A+C<=B) OR (C+B<=A) THEN 'Not A Triangle'
+      WHEN (A=B) AND (B=C) AND (C=A) THEN 'Equilateral'
+      WHEN (A=B) OR (B=C) OR (A=C) THEN 'Isosceles'
+      ELSE 'Scalene'
+  END
+FROM TRIANGLES;
+```
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
