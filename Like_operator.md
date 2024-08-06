@@ -4,14 +4,4 @@
 
 **Solution**
 ```sql
-Select distinct city from station where city regexp '^[AEIOU].*[aeiou]$';`
-
-
-2. Query the [list of CITY names](https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true) from STATION that do not start with vowels. Your result cannot contain duplicates.
-
-
-**Solution**
-
-```sql
-select distinct city from station
-where city NOT regexp '^[AEIOU]';
+`Select distinct city from station where city regexp '^[AEIOU].*[aeiou]$';`
