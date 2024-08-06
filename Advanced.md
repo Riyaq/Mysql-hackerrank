@@ -103,3 +103,20 @@ FROM (
 GROUP BY rn
 ORDER BY rn;
 ```
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Binary tree nodes**
+-----------------
+[You are given a table, BST, containing two columns: N and P, where N represents the value of a node in Binary Tree, and P is the parent of N.](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)<br>
+
+<img width="603" alt="Screenshot 2024-08-06 at 8 07 33 AM" src="https://github.com/user-attachments/assets/8a548a35-c647-43fc-9c40-fe546604d041"><br>
+**Solution**
+```sql
+select N,
+       if(P is null, 'Root', if((select count(*) from BST where P = B.N)> 0, 'Inner', 'Leaf')) 
+from BST as B 
+order by N;
+```
+
+
