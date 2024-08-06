@@ -8,12 +8,8 @@ There are a total of [occupation_count] [occupation]s.
 where [occupation_count] is the number of occurrences of an occupation in OCCUPATIONS and [occupation] is the lowercase occupation name. If more than one Occupation has the same [occupation_count], they should be ordered alphabetically.
 
 Given a table OCCUPATIONS that holds data for three fields namely Column, Type.<br>
-+-------------+-----------+<br>
-| Column      |   Type    |<br>
-+-------------+-----------+<br>
-| Name        | STRING    |<br>
-| Occupation  | STRING    |<br>
-+-------------+-----------+<br>
+<img width="219" alt="Screenshot 2024-08-06 at 7 14 21 AM" src="https://github.com/user-attachments/assets/bf33912d-a932-46f1-8e98-a2b4a21d7fb9">
+
 **Solution**
 ```sql
 SELECT CONCAT(NAME,"(",SUBSTR(OCCUPATION,1,1),")") 
