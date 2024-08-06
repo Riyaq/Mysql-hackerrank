@@ -7,5 +7,3 @@
 Select distinct city from station where city regexp '^[AEIOU].*[aeiou]$';
 
 
-
-
