@@ -9,7 +9,7 @@ The OCCUPATIONS table is described as follows:<br>
 Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.
 
 **Sample Input**<br>
-<img width="336" alt="Screenshot 2024-08-06 at 7 42 13 AM" src="https://github.com/user-attachments/assets/259d2a6e-6a09-4b53-8537-90519ca92593">
+<img width="336" alt="Screenshot 2024-08-06 at 7 42 13 AM" src="https://github.com/user-attachments/assets/259d2a6e-6a09-4b53-8537-90519ca92593"><br>
 **Sample Output**
 ```markup
 Jenny    Ashley     Meera  Jane
