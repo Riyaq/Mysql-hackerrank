@@ -14,3 +14,10 @@ SELECT NAME FROM STUDENTS
 WHERE MARKS>75 
 ORDER BY SUBSTRING(NAME, -3), ID;
 ```
+2. [Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.](https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true)<br>
+
+   **Solution**
+   ```sql
+SELECT NAME FROM Employee
+ORDER BY NAME ASC;
+   ```
