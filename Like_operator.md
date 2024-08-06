@@ -1,3 +1,7 @@
+
+<img width="700" alt="STATION" src="https://github.com/user-attachments/assets/8ed1e129-1454-456e-8c84-de85f80ea961"><BR>
+<BR>
+<BR>
 1. [Query the list of CITY names](https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true) from STATION which have vowels (i.e., a, e, i, o, and u) as **both their first and last characters**. Your result cannot contain duplicates.
    
 
