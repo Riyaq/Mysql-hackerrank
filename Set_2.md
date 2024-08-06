@@ -2,6 +2,7 @@
 Solution](https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true)<br>
 <br>
 **Solution**
+<br>
 ```sql
 SELECT NAME FROM STUDENTS
 WHERE MARKS>75 
