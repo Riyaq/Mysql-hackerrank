@@ -58,14 +58,26 @@ WHERE CITY NOT REGEXP '^[AEIOU]'
 AND CITY NOT REGEXP '[aeiou]$';
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-6. [Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137.2345. Round your answer to 4 decimal places.](https://www.hackerrank.com/challenges/weather-observation-station-15/problem?isFullScreen=true)
-
+6. [Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than 137.2345. Round your answer to 4 decimal places.](https://www.hackerrank.com/challenges/weather-observation-station-15/problem?isFullScreen=true)<br>
+**Solution**
 ```sql
 SELECT ROUND(LONG_W, 4) FROM STATION
 WHERE LAT_N < 137.2345
 ORDER BY LAT_N DESC
 LIMIT 1;
 ```
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Query the smallest Northern Latitude (LAT_N) from STATION that is greater than . Round your answer to  decimal places](https://www.hackerrank.com/challenges/weather-observation-station-16/problem?isFullScreen=true)<br>
+**Solution**
+```sql
+SELECT ROUND(LAT_N, 4)
+FROM STATION
+WHERE LAT_N > 38.7789
+ORDER BY LAT_N ASC
+LIMIT 1;
+```
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
