@@ -2,5 +2,5 @@
 [Link](https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true)
 
 ```markdown
-`Select distinct city from station
-where city regexp '^[AEIOU].*[aeiou]$';`
+Select distinct city from station
+where city regexp '^[AEIOU].*[aeiou]$';
