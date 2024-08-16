@@ -152,9 +152,10 @@ where a.Salary > b.Salary
    <img width="233" alt="Screenshot 2024-08-16 at 11 35 54 AM" src="https://github.com/user-attachments/assets/64e648ff-bf20-451b-ad9b-31966a346232">
 
 ```sql
-select id, movie from cinema
+select * from cinema
 where
 id/2!=0 and description!="Boring"
+order by rating desc
 ```
 
 
