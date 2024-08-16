@@ -63,7 +63,6 @@ insert into candidate values(
 3. Write a query to swap all 'm' and 'f' values and vice versa in sex column with single update statement and no intermediate temporary table.
    --
  
- LEETCODE<br>
 
 <img width="201" alt="Screenshot 2024-08-15 at 11 50 57 PM" src="https://github.com/user-attachments/assets/cf94689f-ec1b-4659-a0c9-12a5b7f1520c">
 
@@ -147,16 +146,36 @@ where a.Salary > b.Salary
 ```
 
 -------------------------------------------------------------------------------------------------
-6. Write a query to report the movies with an odd odd-numbered id and description not as boring.
+6. Write a solution to report the movies with an odd odd-numbered id and description not as boring.
    -
    <img width="233" alt="Screenshot 2024-08-16 at 11 35 54 AM" src="https://github.com/user-attachments/assets/64e648ff-bf20-451b-ad9b-31966a346232">
-
+**Solution**
 ```sql
 select * from cinema
 where
 id/2!=0 and description!="Boring"
 order by rating desc
 ```
+-------------------------------------------------------------------------------------------------
+7. Write a solution to find all the classes that have atleast 5 students.
+   -
 
+<img width="116" alt="Screenshot 2024-08-16 at 11 53 47 AM" src="https://github.com/user-attachments/assets/bb545969-6c7f-4ef7-a7b6-7f2894a92130">
+
+**Solution**
+```sql
+SELECT class
+FROM Courses
+GROUP BY class
+HAVING COUNT(student) >= 5
+```
+
+
+
+
+
+
+
+   
 
 
