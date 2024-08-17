@@ -17,3 +17,17 @@ select person1,person2,count(*) as call_count,sum(duration) as total_duration
 from cte 
 group by person1,person2;
 ```
+Input_query<br>
+```sql
+create table calls(
+from_id int,to_id int,duration int);
+
+insert into calls values(
+1,2,59), 
+(2,1,11),
+(1,3,20),
+(3,4,100),
+(3,4,200),
+(3,4,200),
+(4,3,499);
+```
