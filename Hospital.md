@@ -76,11 +76,11 @@ insert into Doctors values
       where year(birth_date)=1999;
    ```
 9. Show the first_name, last_name, and height of the patient with the greatest height.
-   ```sql
-      select first_name,last_name, height from patients 
-      order by height desc
-      LIMIT 1;
-   ```
+    ```sql
+       select first_name,last_name, height from patients 
+       order by height desc
+       LIMIT 1;
+    ```
 10. Show all columns for patients who have one of the following patient_ids:
 1,3,5
    ```sql
@@ -104,3 +104,10 @@ insert into Doctors values
        GROUP BY first_name
        HAVING COUNT(first_name) = 1;
     ```
+19. Show patient_id and first_name from patients where their first_name start and ends with ‘s’ and is at least 6 characters long.
+    ```sql
+       SELECT patient_id, first_name
+       FROM patients
+       where first_name like "S%s" and len(first_name)>=6;
+    ```
+    
