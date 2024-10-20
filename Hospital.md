@@ -33,3 +33,8 @@ insert into Admissions values(1,"2024-08-20","2024-08-24","Fever",01),
       SELECT first_name, last_name, gender FROM patients 
       WHERE gender="M";
    ```
+2. Show first name and last name of patients who does not have allergies. (null)
+   ```sql
+      SELECT first_name, last_name FROM patients
+      WHERE allergies is NULL;
+   ```
