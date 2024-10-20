@@ -61,9 +61,9 @@ insert into Doctors values
    ```
 5. Update the patients table for the allergies column. If the patient’s allergies is null then replace it with ‘NKA’
    ```sql
-   Update Patients
-   set allergies = "NKA"
-   where allergies is null;
+      Update Patients
+     set allergies = "NKA"
+     where allergies is null;
    ```
 6. Show first name and last name concatenated into one column to show their full name.
    ```sql
@@ -89,9 +89,12 @@ insert into Doctors values
    ```
 12. Show all the columns from admissions where the patient was admitted and discharged on the same day.
     ```sql
-    select * from Admissions
-    where admission_date=discharge_date;
-```
-
-
+       select * from Admissions
+       where admission_date=discharge_date;
+    ```
+17. Show unique birth years from patients and order them by ascending.
+    ```sql
+       select distinct(year(birth_date)) as Year from Patients
+       order by Year ASC;
+    ```
    
