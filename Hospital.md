@@ -81,6 +81,17 @@ insert into Doctors values
       order by height desc
       LIMIT 1;
    ```
+10. Show all columns for patients who have one of the following patient_ids:
+1,3,5
+```sql
+   select * from patients
+   where patient_id in (1,3,5)
+```
+12. Show all the columns from admissions where the patient was admitted and discharged on the same day.
+    ```sql
+    select * from Admissions
+    where admission_date=discharge_date;
+```
 
 
    
