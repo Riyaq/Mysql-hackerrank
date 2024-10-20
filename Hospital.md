@@ -67,8 +67,8 @@ insert into Doctors values
    ```
 6. Show first name and last name concatenated into one column to show their full name.
    ```sql
-   select first_name,last_name,concat(first_name," ",last_name) as full_name
-   from patients;
+      select first_name,last_name,concat(first_name," ",last_name) as full_name
+      from patients;
    ```
 8. Show how many patients have a birth_date with 1999 as the birth year.
    ```sql
@@ -83,10 +83,10 @@ insert into Doctors values
    ```
 10. Show all columns for patients who have one of the following patient_ids:
 1,3,5
-```sql
-   select * from patients
-   where patient_id in (1,3,5)
-```
+   ```sql
+      select * from patients
+      where patient_id in (1,3,5)
+   ```
 12. Show all the columns from admissions where the patient was admitted and discharged on the same day.
     ```sql
     select * from Admissions
