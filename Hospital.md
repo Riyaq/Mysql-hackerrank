@@ -110,4 +110,13 @@ insert into Doctors values
        FROM patients
        where first_name like "S%s" and len(first_name)>=6;
     ```
+--------------
+###JOINS
+
+20 .Show patient_id, first_name, last_name from patients who’s diagnosis is ‘Dementia’. Primary diagnosis is stored in the admissions table.
+```sql
+   SELECT p.patient_id,p.first_name,p.last_name, a.diagnosis from patients as p
+   join admissions as a
+   on p.patient_id=a.patient_id;
+```
     
