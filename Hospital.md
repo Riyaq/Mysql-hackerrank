@@ -134,6 +134,17 @@ insert into Doctors values
     JOIN admissions ON doctors.doctor_id = admissions.attending_doctor_id
     GROUP BY doctors.doctor_id, doctors.first_name, doctors.last_name;
     ```
+44. Show patient_id, first_name, last_name, and attending doctor’s specialty. Show only the patients who has a diagnosis as ‘Fever’ and the doctor’s first name is ‘Binayak’. Check patients, admissions, and doctors tables for required information.
+```sql
+   Select patients.patient_id, patients.first_name, patients.last_name, Doctors.specialty
+   From patients
+   join Admissions
+   on patients.patient_id=Admissions.patient_id
+   join Doctors
+   on Admissions.attending_doctor_id=Doctors.doctor_id
+
+   where diagnosis = "Fever" AND Doctors.first_name="Binayak";
+```
 ------------------------------
 22. Show the total amount of male patients and the total amount of female patients in the patients table.
 ```sql
