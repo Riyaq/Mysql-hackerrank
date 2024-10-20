@@ -1,5 +1,5 @@
 ***Table — Name — Columns*** <br>
-Webpagelink(https://vaibhavkpatel.medium.com/sql-preparation-for-interviews-6b5b6bfec002)
+[Webpagelink](https://vaibhavkpatel.medium.com/sql-preparation-for-interviews-6b5b6bfec002) <br>
 Table1 — Patients— patient_id, first_name, last_name, gender, birth_date, city, province_id, allergies, height, weight
 
 Table2 — Admissions — patient_id, admission_date, discharge_date, diagnosis, attending_doctor_id
