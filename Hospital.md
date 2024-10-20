@@ -97,4 +97,10 @@ insert into Doctors values
        select distinct(year(birth_date)) as Year from Patients
        order by Year ASC;
     ```
-   
+18. Show unique first names from the patients table which only occurs once in the list.
+    ```sql
+       SELECT first_name
+       FROM patients
+       GROUP BY first_name
+       HAVING COUNT(first_name) = 1;
+    ```
