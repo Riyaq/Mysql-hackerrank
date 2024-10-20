@@ -15,6 +15,7 @@ insert into Patients values
 (3,"Shwetha","Ramkrisnppa","F","2000-03-23","Bangalore",30,"Yes",4.8,50),
 (4,"Riya","Ghanty","F","1993-03-23","Durgapur",500,NULL,5.1,48),
 (5,"Rupa","Sen","F","1990-03-23","Delhi",200,"Yes",5.0,70);
+(6,"Ronit","Sen","M","1999-08-20","Kolkata",100,NULL,5.9,90)
 ```
 Creating table2:
 ```sql
