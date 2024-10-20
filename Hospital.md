@@ -10,11 +10,11 @@ Creating table1:
 ```sql
 CREATE TABLE Patients(patient_id int primary key,first_name varchar(20),last_name  varchar(20),gender char,birth_date date,city varchar(20),province_id int,allergies varchar(20),height float,weight float)
 insert into Patients values
-(1,"Ronit","Roy","M","2024-08-20","Kolkata",100,NULL,5.5,80),
-(2,"Mayank","Sen","M","2024-08-21","Delhi",200,"Yes",5.0,70),
-(3,"Shwetha","Ramkrisnppa","F","2024-08-22","Bangalore",30,"Yes",4.8,50),
-(4,"Riya","Ghanty","F","2024-08-21","Durgapur",500,NULL,5.1,48),
-(5,"Rupa","Sen","F","2024-08-22","Delhi",200,"Yes",5.0,70);
+(1,"Ronit","Roy","M","1999-03-23","Kolkata",100,NULL,5.5,80),
+(2,"Mayank","Sen","M","1995-03-23","Delhi",200,"Yes",5.0,70),
+(3,"Shwetha","Ramkrisnppa","F","2000-03-23","Bangalore",30,"Yes",4.8,50),
+(4,"Riya","Ghanty","F","1993-03-23","Durgapur",500,NULL,5.1,48),
+(5,"Rupa","Sen","F","1990-03-23","Delhi",200,"Yes",5.0,70);
 ```
 Creating table2:
 ```sql
