@@ -48,3 +48,23 @@ insert into Doctors values
       SELECT first_name, last_name FROM patients
       WHERE allergies is NULL;
    ```
+3. Show first name of patients that start with the letter ‘R’
+   ```sql
+      select first_name from Patients
+      where first_name like "R%";
+   ```
+4. Show first name and last name of patients that weight within the range of 40 to 70
+   ```sql
+      select first_name,last_name, weight
+      from patients 
+      where weight between 40 and 70;
+   ```
+
+
+
+
+
+
+
+
+   
