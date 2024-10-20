@@ -26,3 +26,9 @@ insert into Admissions values(1,"2024-08-20","2024-08-24","Fever",01),
 (6,"2024-08-18","2024-08-23","Blind",03),
 (7,"2024-08-16","2024-08-26","Stomach problem",03);
 ```
+-----------------------------------
+1. Show first name, last name, and gender of patients whose gender is ‘M’
+   ```sql
+      SELECT first_name, last_name, gender FROM patients 
+      WHERE gender="M";
+   ```
