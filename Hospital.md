@@ -126,6 +126,13 @@ insert into Doctors values
    on p.patient_id=a.patient_id
    where diagnosis="Fever";
 ```
+35. Show first_name, last_name, and the total number of admissions attended for each doctor. Every admission has been attended by a doctor.
+    ```sql
+    SELECT doctors.first_name, doctors.last_name, COUNT(admissions.attending_doctor_id) AS admission_count
+    FROM doctors
+    JOIN admissions ON doctors.doctor_id = admissions.attending_doctor_id
+    GROUP BY doctors.doctor_id, doctors.first_name, doctors.last_name;
+    ```
 ------------------------------
 22. Show the total amount of male patients and the total amount of female patients in the patients table.
 ```sql
@@ -139,6 +146,7 @@ insert into Doctors values
    COUNT(case when gender="F" then 1 end) as Female
    from patients;
 ```
+
 
 
 
