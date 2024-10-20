@@ -111,7 +111,7 @@ insert into Doctors values
        where first_name like "S%s" and len(first_name)>=6;
     ```
 --------------
-###JOINS
+### JOINS
 
 20 .Show patient_id, first_name, last_name from patients who’s diagnosis is ‘Dementia’. Primary diagnosis is stored in the admissions table.
 ```sql
