@@ -113,10 +113,38 @@ insert into Doctors values
 --------------
 ### JOINS
 
-20 .Show patient_id, first_name, last_name from patients who’s diagnosis is ‘Dementia’. Primary diagnosis is stored in the admissions table.
+20. Show patient_id, first_name, last_name from patients and diagnosis from admissions table. Primary diagnosis is stored in the admissions table.
 ```sql
    SELECT p.patient_id,p.first_name,p.last_name, a.diagnosis from patients as p
    join admissions as a
    on p.patient_id=a.patient_id;
 ```
-    
+20. Show patient_id, first_name, last_name from patients who’s diagnosis is ‘Fever’. Primary diagnosis is stored in the admissions table.
+```sql
+   SELECT p.patient_id,p.first_name,p.last_name, a.diagnosis from patients as p
+   join admissions as a
+   on p.patient_id=a.patient_id
+   where diagnosis="Fever";
+```
+------------------------------
+22. Show the total amount of male patients and the total amount of female patients in the patients table.
+```sql
+   select gender, count(*) from patients
+   group by gender
+```
+23. Show the total amount of male patients and the total amount of female patients in the patients table.
+    Display the two results in the same row.
+```sql
+   SELECT COUNT(case when gender="M" then 1 end) as Male,
+   COUNT(case when gender="F" then 1 end) as Female
+   from patients;
+```
+
+
+
+
+
+
+
+
+
