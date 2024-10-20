@@ -59,12 +59,28 @@ insert into Doctors values
       from patients 
       where weight between 40 and 70;
    ```
-
-
-
-
-
-
+5. Update the patients table for the allergies column. If the patient’s allergies is null then replace it with ‘NKA’
+   ```sql
+   Update Patients
+   set allergies = "NKA"
+   where allergies is null;
+   ```
+6. Show first name and last name concatenated into one column to show their full name.
+   ```sql
+   select first_name,last_name,concat(first_name," ",last_name) as full_name
+   from patients;
+   ```
+8. Show how many patients have a birth_date with 1999 as the birth year.
+   ```sql
+      select count(*) from Patients
+      where year(birth_date)=1999;
+   ```
+9. Show the first_name, last_name, and height of the patient with the greatest height.
+   ```sql
+      select first_name,last_name, height from patients 
+      order by height desc
+      LIMIT 1;
+   ```
 
 
    
