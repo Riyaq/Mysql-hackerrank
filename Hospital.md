@@ -27,6 +27,16 @@ insert into Admissions values(1,"2024-08-20","2024-08-24","Fever",01),
 (6,"2024-08-18","2024-08-23","Blind",03),
 (7,"2024-08-16","2024-08-26","Stomach problem",03);
 ```
+Creating table3:
+```sql
+CREATE TABLE Doctors (doctor_id int,first_name VARCHAR(20),last_name  VARCHAR(20),specialty   VARCHAR(20));
+
+insert into Doctors values
+(01,"Binayak","Malakar","General Physician"),
+(02,"Souvargya","Ghanashyam","Viarl deseace expert"),
+(03,"Anupama","Ghosh Dostidar","Eye specialist"),
+(04,"Sri Diganta","Biswar","Viarl deseace expert");
+```
 -----------------------------------
 1. Show first name, last name, and gender of patients whose gender is ‘M’
    ```sql
