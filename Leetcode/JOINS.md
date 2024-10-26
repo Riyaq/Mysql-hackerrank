@@ -20,3 +20,28 @@ SELECT product_name, year, price
 FROM Sales
     JOIN Product USING (product_id);
 ```
+# Query
+[1581. Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50)
+
+```sql
+SELECT v.customer_id, COUNT(*) AS count_no_trans
+FROM visits v
+LEFT JOIN transactions t USING (visit_id)
+WHERE t.transaction_id IS NULL
+GROUP BY v.customer_id;
+```
+```SQL
+SELECT DISTINCT customer_id,
+                count(customer_id) AS count_no_trans
+FROM visits v
+LEFT JOIN transactions t ON v.visit_id = t.visit_id
+WHERE transaction_id IS NULL
+GROUP BY customer_id
+ORDER BY NULL;
+```
+```SQL
+SELECT customer_id, COUNT(*) as count_no_trans
+FROM Visits
+WHERE visit_id NOT IN (SELECT DISTINCT visit_id FROM Transactions)
+GROUP BY customer_id;
+```
