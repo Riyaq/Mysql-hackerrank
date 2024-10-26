@@ -22,3 +22,27 @@ ORDER BY product_id;
 SELECT name, population, area FROM World
 WHERE area>=3000000 OR population>=25000000;
 ```
+# Query 4
+[1148. Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50)
+
+```sql
+SELECT DISTINCT author_id AS id FROM Views
+WHERE author_id=viewer_id
+ORDER BY ID;
+```
+
+# Query 5
+[1683. Invalid Tweets](https://leetcode.com/problems/invalid-tweets/?envType=study-plan-v2&envId=top-sql-50)
+
+```sql
+SELECT tweet_id FROM Tweets
+WHERE LENGTH(content)>15
+```
+
+
+
+
+
+
+
+
