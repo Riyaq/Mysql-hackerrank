@@ -5,12 +5,17 @@
    
 
 
-**Solution**
+**Solution 1**
 
 ```sql
 Select distinct city from station where city regexp '^[AEIOU].*[aeiou]$';
 ```
-
+**Solution 2**
+```sql
+SELECT CITY FROM STATION
+WHERE (CITY like 'A%'or CITY like 'I%' or CITY like 'E%' or CITY like 'O%' or CITY like 'U%') AND 
+(CITY like '%a'or CITY like '%e' or CITY like '%i' or CITY like '%o' or CITY like '%u')
+```
 
 
 
