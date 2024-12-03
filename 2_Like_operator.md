@@ -6,29 +6,32 @@
 
 
 **Solution 1**
-
-```sql
-Select distinct city from station where city regexp '^[AEIOU].*[aeiou]$';
-```
-**Solution 2**
 ```sql
 SELECT CITY FROM STATION
 WHERE (CITY like 'A%'or CITY like 'I%' or CITY like 'E%' or CITY like 'O%' or CITY like 'U%') AND 
 (CITY like '%a'or CITY like '%e' or CITY like '%i' or CITY like '%o' or CITY like '%u')
 ```
-
+**Solution 2**
+```sql
+Select distinct city from station where city regexp '^[AEIOU].*[aeiou]$';
+```
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 2. [Query the list of CITY names](https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true) from STATION that **do not start with vowels**. Your result cannot contain duplicates.
 
 
-**Solution**
-
+**Solution 1**
+```sql
+SELECT DISTINCT CITY FROM STATION
+WHERE NOT (CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%')
+```
+**Solution 2**
 
 ```sql
 select distinct city from station where city NOT regexp '^[AEIOU]';
 ```
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 3.[Query the list of CITY names](https://www.hackerrank.com/challenges/weather-observation-station-10/problem?isFullScreen=true) from STATION that **do not end with vowels**. Your result cannot contain duplicates.
 
