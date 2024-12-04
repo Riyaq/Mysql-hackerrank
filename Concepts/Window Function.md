@@ -54,4 +54,32 @@ Explanation: <br>
 The <mark>ORDER BY sale_date</mark> ensures that the rows are ordered by the sale_date before calculating the running total.
 
 -----------------------------------------------------
-
+**2. Rank Sales by Date**
+You have a table sales with the following columns:<br>
+| sale_date	| sale_amount| 
+| ------------- | ------------- |
+| 2024-01-01	| 100 |
+| 2024-01-02	| 200 |
+| 2024-01-03	| 150 |
+| 2024-01-04	| 250 |
+Solution<br>
+```sql
+SELECT 
+    sale_date,
+    sale_amount,
+    RANK() OVER (ORDER BY sale_amount DESC) AS sale_rank
+FROM 
+    sales
+ORDER BY 
+    sale_date;
+```
+Output Table - <br>
+| sale_date	| sale_amount| 
+| ------------- | ------------- |
+| 2024-01-01	| 100 | 4 |
+| 2024-01-02	| 200 | 2 |
+| 2024-01-03	| 150 | 3 |
+| 2024-01-04	| 250 | 1 |
+<br>
+<mark>RANK() OVER (ORDER BY sale_amount DESC)</mark> ranks the rows based on sale_amount, in descending order. <br>
+If two rows have the same <mark>sale_amount</mark>, they will receive the same rank, and the next rank will skip accordingly.
