@@ -7,5 +7,6 @@ SELECT column_name1,
  OVER([PARTITION BY column_name1] [ORDER BY column_name3]) AS new_column
 FROM table_name;
 ```
+**Key Terms**
 
-
+<img width="1027" alt="Screenshot 2024-12-04 at 10 57 16 AM" src="https://github.com/user-attachments/assets/519e0197-b1ba-4907-a03f-fbe3a8f01a5d">
