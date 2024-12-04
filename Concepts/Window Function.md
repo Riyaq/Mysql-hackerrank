@@ -47,3 +47,9 @@ OutPut Table<br>
 | 2024-01-02	| 200 | 300 |
 | 2024-01-03	| 150 | 450|
 | 2024-01-04 |250 | 700|
+Explanation: <br>
+<mark>SUM(sale_amount) OVER (ORDER BY sale_date)</mark> is a window function that computes the cumulative sum of sale_amount ordered by sale_date.<br>
+The <mark>ORDER BY sale_date</mark> ensures that the rows are ordered by the sale_date before calculating the running total.
+
+-----------------------------------------------------
+
