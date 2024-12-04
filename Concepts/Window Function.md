@@ -19,3 +19,4 @@ This are 5 aggregate function -
 - COUNT()
 - MAX()
 - MIN()
+### Example on window function with Aggregate 
