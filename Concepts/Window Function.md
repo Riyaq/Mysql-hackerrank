@@ -20,7 +20,7 @@ This are 5 aggregate function -
 - MAX()
 - MIN()
 # Example on window function with Aggregate 
-**1. Running Total**
+**1. Running Total** <br>
  Write a query that calculates the running total (cumulative_sum) of the sale_amount for each day, ordered by sale_date.<br>
 Table - <br>
 | sale_date  | sale_amount |
@@ -29,3 +29,21 @@ Table - <br>
 | 2024-01-02	| 200 |
 | 2024-01-03	| 150 |
 | 2024-01-04 |250 |
+Solution<br>
+```sql
+SELECT 
+    sale_date,
+    sale_amount,
+    SUM(sale_amount) OVER (ORDER BY sale_date) AS cumulative_sum
+FROM 
+    sales
+ORDER BY 
+    sale_date;
+```
+OutPut Table<br>
+| sale_date  | sale_amount |cumulative_sum |
+| ------------- | ------------- | ------------ |
+| 2024-01-01	| 100 | 100 |
+| 2024-01-02	| 200 | 300 |
+| 2024-01-03	| 150 | 450|
+| 2024-01-04 |250 | 700|
