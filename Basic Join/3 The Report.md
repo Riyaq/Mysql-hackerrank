@@ -12,3 +12,14 @@
 | ------------- | ------------- |------------- |
 | 1  | 0  | 9 |
 |  2 | 10  | 19 |
+
+**Question :**
+generate a report containing three columns: Name, Grade and Mark. <br>
+1. Doesn't want the NAMES of those students who received a grade lower than 8. <br>
+2. The report must be in descending order by grade -- i.e. higher grades are entered first. <br>
+3. If there is more than one student with the same grade (8-10) assigned to them, order those particular students by their name alphabetically. <br>
+4. If the grade is lower than 8, use "NULL" as their name and list them by their grades in descending order.<br>
+5. If there is more than one student with the same grade (1-7) assigned to them, order those particular students by their marks in ascending order.<br>
+<br>
+<br>
+Link : https://www.hackerrank.com/challenges/the-report/problem?isFullScreen=true
