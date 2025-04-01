@@ -1,5 +1,7 @@
+** Top Competitors **
+
 ### Question
-[Link](https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true)
+[Link](https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true) <br>
 Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! <br>
 Write a query to print the respective hacker_id and name of hackers who achieved full scores for more than one challenge. <br>
 Order your output in descending order by the total number of challenges in which the hacker earned a full score.<br>
