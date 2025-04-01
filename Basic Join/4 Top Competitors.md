@@ -10,3 +10,6 @@ If more than one hacker received full scores in same number of challenges, then 
 <br>
 <br>
 
+*** Observation ***
+Here is total 4 table and I have to work with all the table at once.<br>
+Hence I will use INNER JOIN here to build connection/ JOIN with all four table.<br>
