@@ -11,7 +11,7 @@
 | 5   | Eve   | 8000   |
 <br>
 <br>
-***Solution** <br>
+**Solution**
 
 Using MAX() with Subquery (Universal Approach)
 
@@ -21,7 +21,7 @@ FROM Employees
 WHERE salary < (SELECT MAX(salary) FROM Employees);
 ```
 
-***Solution** <br>
+**Solution** 
 Using LIMIT with OFFSET
 
 ```sql
