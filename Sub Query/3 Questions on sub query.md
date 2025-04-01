@@ -9,16 +9,16 @@ Departments (department_id, department_name)
 **Table : Employees**
 |employee_id|name|salary|department_id|
 |-----------|----|------|-------------|
-|           |    |      |             |
-|           |    |      |             |
-|           |    |      |             |
+|      1     |  Riya  |    20  |     1        |
+|      2     |   Priya |   30   |     2        |
+|      3     |   Gopa |    40  |       3      |
 
 **Table : Departments**
 |department_id|department_name|
 |-----------|----|
-|           |    |
-|           |    |
-
+|    1       | IT   |
+|    2       |  HR  |
+|    3       | Sales |
 
 This question can be done 3 way
 
