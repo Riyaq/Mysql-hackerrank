@@ -36,14 +36,3 @@ WHERE salary > (
     WHERE E1.department_id = E2.department_id
 );
 ```
-## Subquery in FROM Clause
-Find the department with the highest average salary.
-Using a subquery in the FROM clause, find the department with the highest average salary. You have the following tables:
-
-Employees (employee_id, name, salary, department_id)
-
-Departments (department_id, department_name)
-
-```sql
-
-```
