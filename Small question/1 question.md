@@ -11,7 +11,7 @@
 | 5   | Eve   | 8000   |
 <br>
 <br>
-**Solution**
+**Solution** <br>
 
 Using MAX() with Subquery (Universal Approach)
 
@@ -21,7 +21,7 @@ FROM Employees
 WHERE salary < (SELECT MAX(salary) FROM Employees);
 ```
 
-**Solution** 
+**Solution** <br>
 Using LIMIT with OFFSET
 
 ```sql
@@ -30,7 +30,7 @@ FROM Employees
 ORDER BY salary DESC 
 LIMIT 1 OFFSET 1;
 ```
-***Solution** <br>
+**Solution** <br>
 
 Using DENSE_RANK() 
 ```sql
