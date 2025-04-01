@@ -9,3 +9,10 @@ There are 3 input table<br>
 The desired output table :<br>
 <img width="793" alt="Screenshot 2025-04-01 at 6 45 16 AM" src="https://github.com/user-attachments/assets/aa8c394f-58f8-4fff-89d9-8d04696679df" />
 <br>
+## ANSWER
+----------------------
+***Solution 1***
+Query Using EXISTS
+```sql
+
+```
