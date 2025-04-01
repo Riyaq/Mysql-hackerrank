@@ -24,6 +24,24 @@ WHERE EXISTS (
 );
 
 ```
-***Solution 1***
+***Solution 2***
 Using JOIN Instead of EXISTS
 ```sql
+SELECT D.department_id, D.department_name
+FROM Departments D
+JOIN Employees E ON D.department_id = E.department_id
+JOIN Sales S ON E.employee_id = S.employee_id
+GROUP BY D.department_id, D.department_name
+HAVING COUNT(S.sale_id) > 0;\
+```
+***Solution 2***
+Using IN sub query
+```sql
+SELECT department_id, department_name
+FROM Departments
+WHERE department_id IN (
+    SELECT DISTINCT E.department_id
+    FROM Employees E
+    JOIN Sales S ON E.employee_id = S.employee_id
+);
+```
