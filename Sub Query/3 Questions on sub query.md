@@ -6,6 +6,12 @@ Employees (employee_id, name, salary, department_id)
 
 Departments (department_id, department_name)
 
+Table : Employees
+|employee_id|name|salary|department_id|
+|-----------|----|------|-------------|
+|           |    |      |             |
+
+
 
 This question can be done 3 way
 
