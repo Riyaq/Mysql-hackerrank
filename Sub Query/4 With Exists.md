@@ -14,5 +14,16 @@ The desired output table :<br>
 ***Solution 1***
 Query Using EXISTS
 ```sql
+SELECT DISTINCT D.department_id, D.department_name
+FROM Departments D
+JOIN Employees E ON D.department_id = E.department_id
+WHERE EXISTS (
+    SELECT 1 
+    FROM Sales S
+    WHERE S.employee_id = E.employee_id
+);
 
 ```
+***Solution 1***
+Using JOIN Instead of EXISTS
+```sql
