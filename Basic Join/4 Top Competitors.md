@@ -1,6 +1,6 @@
 
 ## Question
----------
+
 
 [Link](https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true) <br>
 Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! <br>
