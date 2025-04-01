@@ -11,14 +11,14 @@ Departments (department_id, department_name)
 |-----------|----|------|-------------|
 |           |    |      |             |
 |           |    |      |             |
-|-----------|----|------|-------------|
+|           |    |      |             |
 
 **Table : Departments**
 |department_id|department_name|
 |-----------|----|
 |           |    |
 |           |    |
-|-----------|----|
+
 
 This question can be done 3 way
 
