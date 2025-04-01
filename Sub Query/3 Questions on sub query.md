@@ -12,6 +12,8 @@ Departments (department_id, department_name)
 |      1     |  Riya  |    20  |     1        |
 |      2     |   Priya |   30   |     2        |
 |      3     |   Gopa |    40  |       3      |
+|      4     | Suvojit |   50   |      1     |
+|      5     | Ritwik  |   45   |      2     |
 
 **Table : Departments**
 |department_id|department_name|
