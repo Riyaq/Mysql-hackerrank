@@ -12,12 +12,15 @@
 <br>
 <br>
 ***Solution** <br>
+
 Using MAX() with Subquery (Universal Approach)
+
 ```sql
 SELECT MAX(salary) AS second_highest_salary
 FROM Employees
 WHERE salary < (SELECT MAX(salary) FROM Employees);
 ```
+
 ***Solution** <br>
 Using LIMIT with OFFSET
 
