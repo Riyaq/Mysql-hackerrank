@@ -20,6 +20,7 @@ WHERE salary < (SELECT MAX(salary) FROM Employees);
 ```
 ***Solution** <br>
 Using LIMIT with OFFSET
+
 ```sql
 SELECT DISTINCT salary 
 FROM Employees 
@@ -27,6 +28,7 @@ ORDER BY salary DESC
 LIMIT 1 OFFSET 1;
 ```
 ***Solution** <br>
+
 Using DENSE_RANK() 
 ```sql
 SELECT salary 
@@ -35,5 +37,4 @@ FROM (
     FROM Employees
 ) ranked_salaries
 WHERE rnk = 2;
-
 ```
