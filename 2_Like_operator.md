@@ -1,5 +1,11 @@
-
-
+## Leetcode - 3436 Find valid email
+Link : https://leetcode.com/problems/find-valid-emails/description/
+```sql
+SELECT user_id, email
+FROM Users
+WHERE email REGEXP '^[a-zA-Z0-9_]+@[a-zA-Z]+.com$';
+```
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. [Query the list of CITY names](https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true) from STATION which have vowels (i.e., a, e, i, o, and u) as **both their first and last characters**. Your result cannot contain duplicates.
    
@@ -106,6 +112,18 @@ Query the Manhattan Distance between points P1 and P2 and round it to a scale of
 SELECT ROUND((MAX(LAT_N) - MIN(LAT_N) + MAX(LONG_W) - MIN(LONG_W)), 4) AS D
 FROM STATION
 ```
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 <BR>
