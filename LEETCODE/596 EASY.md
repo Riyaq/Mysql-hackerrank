@@ -20,7 +20,6 @@ FROM (
 ) sub_table
 WHERE no_of_students>=5
 
-);
 ```
 Using CTE <br>
 ```sql
