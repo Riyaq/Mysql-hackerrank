@@ -1,8 +1,8 @@
 ## Classes more than 5 employees 
 **Question** <br>
 Write a solution to find all the classes that have at least five students.<br>
-Input: 
-Courses table:
+Input: <br>
+Courses table: <br>
 +---------+----------+
 | student | class    |
 +---------+----------+
@@ -16,7 +16,7 @@ Courses table:
 | H       | Math     |
 | I       | Math     |
 +---------+----------+
-Output: 
+Output: <br>
 +---------+
 | class   |
 +---------+
