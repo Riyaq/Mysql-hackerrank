@@ -3,9 +3,8 @@
 Write a solution to find all the classes that have at least five students.<br>
 Input: <br>
 Courses table: <br>
-+---------+----------+
+
 | student | class    |
-+---------+----------+
 | A       | Math     |
 | B       | English  |
 | C       | Math     |
@@ -15,13 +14,13 @@ Courses table: <br>
 | G       | Math     |
 | H       | Math     |
 | I       | Math     |
-+---------+----------+
+
 Output: <br>
-+---------+
+
 | class   |
-+---------+
+
 | Math    |
-+---------+
+
 **Answer**
 ```sql
 SELECT class
