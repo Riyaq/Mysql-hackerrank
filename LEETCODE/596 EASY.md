@@ -4,10 +4,10 @@ Write a solution to find all the classes that have at least five students.<br>
 LINK : https://leetcode.com/problems/classes-more-than-5-students/ <br>
 **Answer**
 ```sql
-SELECT class
-FROM Courses
-GROUP BY class
-HAVING count(student)>5 or count(student)=5
+SELECT class_name
+FROM enrollments
+GROUP BY class_name
+HAVING count(*)>5 or count(*)=5
 ```
 ```sql
 SELECT class_name 
