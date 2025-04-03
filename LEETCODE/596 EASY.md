@@ -11,12 +11,13 @@ HAVING count(*)>5 or count(*)=5
 ```
 ```sql
 SELECT class_name 
-FROM enrollments 
-WHERE class_name IN (
-    SELECT class_name 
+FROM (
+    SELECT class_name , count(student) as no_of_students
     FROM enrollments 
     GROUP BY class_name 
-    HAVING COUNT(*) >= 5
+) sub_table
+WHERE no_of_students>=5
+
 );
 ```
 ```sql
