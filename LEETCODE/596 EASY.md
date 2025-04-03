@@ -1,7 +1,7 @@
 ## Classes more than 5 employees 
 **Question** <br>
 Write a solution to find all the classes that have at least five students.<br>
-LINK : https://leetcode.com/problems/classes-more-than-5-students/
+LINK : https://leetcode.com/problems/classes-more-than-5-students/ <br>
 **Answer**
 ```sql
 SELECT class
