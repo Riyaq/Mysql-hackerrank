@@ -29,7 +29,8 @@ WITH ClassCounts AS (
     FROM enrollments
     GROUP BY class_name
 )
-SELECT class_name FROM ClassCounts WHERE student_count >= 5;
+SELECT class_name FROM ClassCounts
+WHERE student_count >= 5;
 ```
 Using CTE <br>
 ```sql
