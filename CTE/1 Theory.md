@@ -27,7 +27,7 @@ A recursive CTE is a CTE that refers to itself. It is useful for hierarchical or
 ------------------------------------------------------------------------------------
 5. When would you use a CTE over a temp table?<br>
 
-  **Use a CTE when:**
+   **Use a CTE when:**
 
 - You need better readability in complex queries.
 
