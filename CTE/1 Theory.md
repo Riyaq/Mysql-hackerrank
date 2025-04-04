@@ -10,13 +10,13 @@
 ------------------------------------------------------------------------------------
 2. Basic Syntax of CTE?
    ```sql
-   WITH cte_name AS (
+    WITH cte_name AS (
     SELECT column1, column2
     FROM table_name
     WHERE condition
-)
-SELECT * FROM cte_name;
-```
+      )
+      SELECT * FROM cte_name;
+   ```
 ------------------------------------------------------------------------------------
 
 3. Can you use multiple CTEs in a single query?
