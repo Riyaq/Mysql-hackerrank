@@ -26,7 +26,7 @@ Yes. You can define multiple CTEs by separating them with commas.
 A recursive CTE is a CTE that refers to itself. It is useful for hierarchical or tree-structured data, like org charts or category trees.
 ------------------------------------------------------------------------------------
 5. When would you use a CTE over a temp table?<br>
-<br>
+
   **Use a CTE when:**
 
 - You need better readability in complex queries.
