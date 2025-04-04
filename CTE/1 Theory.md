@@ -19,13 +19,13 @@
    ```
 ------------------------------------------------------------------------------------
 
-3. Can you use multiple CTEs in a single query?
+3. Can you use multiple CTEs in a single query?<br>
 Yes. You can define multiple CTEs by separating them with commas.
 ------------------------------------------------------------------------------------
-4. What is a recursive CTE? Give an example.
+4. What is a recursive CTE? Give an example.<br>
 A recursive CTE is a CTE that refers to itself. It is useful for hierarchical or tree-structured data, like org charts or category trees.
 ------------------------------------------------------------------------------------
-5. When would you use a CTE over a temp table?
+5. When would you use a CTE over a temp table?<br>
 Answer: Use a CTE when:
 
 - You need better readability in complex queries.
@@ -45,10 +45,10 @@ Use a temp table when:
 
 
 ------------------------------------------------------------------------------------
-6. Can a CTE be referenced multiple times in a query?
+6. Can a CTE be referenced multiple times in a query?<br>
 Answer: Yes, that's one of the main advantages of CTEs over subqueries. You can reuse a CTE multiple times, improving readability and performance (in some databases with proper optimization).
 ------------------------------------------------------------------------------------
-7. How do you improve performance using CTE?
+7. How do you improve performance using CTE?<br>
 Answer:
 
 By breaking complex queries into readable parts.
