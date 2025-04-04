@@ -26,7 +26,7 @@ Yes. You can define multiple CTEs by separating them with commas.
 A recursive CTE is a CTE that refers to itself. It is useful for hierarchical or tree-structured data, like org charts or category trees.
 ------------------------------------------------------------------------------------
 5. When would you use a CTE over a temp table?<br>
-Answer: Use a CTE when:
+  Use a CTE when:
 
 - You need better readability in complex queries.
 
@@ -34,7 +34,7 @@ Answer: Use a CTE when:
 
 - You want recursion.
 
-Use a temp table when:
+  Use a temp table when:
 
 - You need to reuse intermediate data across multiple queries.
 
@@ -51,13 +51,13 @@ Answer: Yes, that's one of the main advantages of CTEs over subqueries. You can 
 7. How do you improve performance using CTE?<br>
 Answer:
 
-By breaking complex queries into readable parts.
+- By breaking complex queries into readable parts.
 
-Reducing redundancy by reusing CTEs instead of writing the same subquery multiple times.
+- Reducing redundancy by reusing CTEs instead of writing the same subquery multiple times.
 
-Avoiding unnecessary joins by filtering data early in the CTE.
+- Avoiding unnecessary joins by filtering data early in the CTE.
 
-Using recursive CTEs to avoid complex loops in procedural logic.
+- Using recursive CTEs to avoid complex loops in procedural logic.
 
 
 
