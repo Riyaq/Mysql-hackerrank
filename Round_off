@@ -1,2 +1,4 @@
 
 Select Round(sum(LAT_N),2),Round(sum(LONG_W),2) from STATION
+
+https://www.hackerrank.com/challenges/weather-observation-station-13/problem?isFullScreen=true
