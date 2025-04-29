@@ -20,3 +20,17 @@ INSERT INTO employees (employee_id, employee_name, department_id, salary, hire_d
 (9, 'Ivy',     30, 8000, '2023-05-30');
 
 ```
+### Question 1
+Rank Employees by Salary:
+Write a query to assign a rank to each employee based on their salary within their department.
+```sql
+SELECT
+  employee_id,
+  department_id,
+  salary,
+  RANK() OVER (
+    PARTITION BY department_id
+    ORDER BY salary DESC
+  ) AS salary_rank
+FROM employees;
+```
