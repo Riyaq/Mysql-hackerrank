@@ -61,9 +61,21 @@ SELECT
   ) AS previous_salary
 FROM employee;
 ```
-
-
-
+### Question 4
+Add Running Total of Salary per Department:
+Compute a cumulative salary sum for employees within each department.
+```sql
+SELECT
+  id,
+  name,
+  department_id,
+  salary,
+  SUM(salary) OVER (
+    PARTITION BY department_id
+    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+  ) AS running_total_salary
+FROM employee;
+```
 
 
 
