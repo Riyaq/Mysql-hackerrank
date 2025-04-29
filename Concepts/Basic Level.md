@@ -34,3 +34,17 @@ SELECT
   ) AS salary_rank
 FROM employees;
 ```
+### Question 2
+Get the Highest Salary per Department:
+Show all employees, and use a window function to flag those with the highest salary in their department.
+```sql
+select id, name, department_id, salary,
+CASE when 
+     salary = max(salary) over(partition by department_id)
+     then "Highest"
+     else " "
+     end as is_highest_salary
+from employee
+```
+
+
