@@ -77,7 +77,15 @@ SELECT
 FROM employee;
 ```
 
-
+### Question 5
+Number Employees per Department:
+Use a window function to count how many employees are in each department, displayed next to each employee.
+```sql
+SELECT ID,NAME, DEPARTMENT_ID, SALARY,
+count(id) OVER (PARTITION BY DEPARTMENT_ID
+) AS no_of_employee
+FROM EMPLOYEE;
+```
 
 
 
