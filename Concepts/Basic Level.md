@@ -1,4 +1,4 @@
-Table code :
+## Table code :
 ```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
@@ -46,5 +46,32 @@ CASE when
      end as is_highest_salary
 from employee
 ```
+### Question 3
+Show Previous Salary:
+For each employee, show their salary and the previous employee’s salary in the same department ordered by salary.
+```sql
+SELECT
+  id,
+  name,
+  department_id,
+  salary,
+  LAG(salary) OVER (
+    PARTITION BY department_id
+    ORDER BY salary
+  ) AS previous_salary
+FROM employee;
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
