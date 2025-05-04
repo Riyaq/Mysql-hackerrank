@@ -1,4 +1,4 @@
-We need to find, for each unique combination of (age, power), the wand with the lowest coins_needed. This is a classic <"group-wise minimum"> problem in SQL.<br>
+We need to find, for each unique combination of (age, power), the wand with the lowest coins_needed. This is a classic **"group-wise minimum"** problem in SQL.<br>
 
 ### QUESTION 
 /*
