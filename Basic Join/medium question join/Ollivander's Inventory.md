@@ -10,9 +10,6 @@ Link : https://www.hackerrank.com/challenges/harry-potter-and-wands/problem?isFu
 SELECT W.id, WP.age, W.coins_needed, W.power
 FROM Wands W
 JOIN Wands_Property WP ON W.code = WP.code
-
-
-
 JOIN (
     SELECT WP.age, W.power, MIN(W.coins_needed) AS min_coins
     FROM Wands W
@@ -21,9 +18,6 @@ JOIN (
     GROUP BY WP.age, W.power
 ) AS MinCost
   ON WP.age = MinCost.age
-
-
-
  AND W.power = MinCost.power
  AND W.coins_needed = MinCost.min_coins
 WHERE WP.is_evil = 0
