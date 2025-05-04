@@ -49,3 +49,25 @@ AND W.coins_needed = (
 )
 ORDER BY W.power DESC, WP.age DESC;
 ```
+### Solution 2: For MySQL 8.0+ (With CTEs)
+If you can upgrade, this is cleaner:
+```sql
+WITH ranked_wands AS (
+    SELECT 
+        W.id, 
+        WP.age, 
+        W.coins_needed, 
+        W.power,
+        ROW_NUMBER() OVER (
+            PARTITION BY WP.age, W.power 
+            ORDER BY W.coins_needed
+        ) AS rn
+    FROM Wands W
+    JOIN Wands_Property WP ON W.code = WP.code
+    WHERE WP.is_evil = 0
+)
+SELECT id, age, coins_needed, power
+FROM ranked_wands
+WHERE rn = 1
+ORDER BY power DESC, age DESC;
+```
