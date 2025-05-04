@@ -1,7 +1,8 @@
 We need to find, for each unique combination of (age, power), the wand with the lowest coins_needed. This is a classic "group-wise minimum" problem in SQL.<br>
 [Link](https://www.hackerrank.com/challenges/harry-potter-and-wands/problem?isFullScreen=false) <br>
 **Solution**
-Basic Join/medium question join/Ollivander's Inventory.md
+Path - Basic Join/medium question join/Ollivander's Inventory.md
+[Link](https://github.com/Riyaq/Mysql-hackerrank/blob/main/Basic%20Join/medium%20question%20join/Ollivander's%20Inventory.md)
 ____________________________________________________________
 <img width="646" alt="Screenshot 2025-05-04 at 8 33 00 AM" src="https://github.com/user-attachments/assets/6bf7ea24-0358-4b56-8b49-1623562c9fa4" />
 <img width="849" alt="Screenshot 2025-05-04 at 8 38 03 AM" src="https://github.com/user-attachments/assets/31ab1b40-24e7-4a4c-a0f9-6831c9490347" />
