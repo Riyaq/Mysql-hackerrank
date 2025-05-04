@@ -1,4 +1,13 @@
-We need to find, for each unique combination of (age, power), the wand with the lowest coins_needed. This is a classic "group-wise minimum" problem in SQL.<br>
+We need to find, for each unique combination of (age, power), the wand with the lowest coins_needed. This is a classic <"group-wise minimum"> problem in SQL.<br>
+
+### QUESTION 
+/*
+determining the minimum number of gold galleons needed to buy each non-evil wand of high power and age. Write a query to print the id, age, coins_needed, and power of the wands that Ron's interested in, sorted in order of descending power. If more than one wand has same power, sort the result in order of descending age.
+*/
+
+
+
+
 [Link](https://www.hackerrank.com/challenges/harry-potter-and-wands/problem?isFullScreen=false) <br>
 **Solution**
 
