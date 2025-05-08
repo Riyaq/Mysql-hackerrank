@@ -47,3 +47,37 @@ FROM (
 ) AS ranked
 WHERE salary_rank <= 2;
 ```
+----------------------------------------------------------------------------
+3. Find First Purchase Date per Customer
+In a purchases table with columns customer_id, purchase_date, and amount, get each customer’s first purchase date using ROW_NUMBER().
+
+| customer\_id | purchase\_date | amount |
+| ------------ | -------------- | ------ |
+| 101          | 2024-01-01     | 100    |
+| 101          | 2024-01-05     | 150    |
+| 102          | 2024-01-03     | 200    |
+| 102          | 2024-01-02     | 50     |
+| 103          | 2024-01-04     | 300    |
+
+```SQL
+SELECT
+  customer_id,
+  purchase_date,
+  amount
+FROM (
+  SELECT
+    customer_id,
+    purchase_date,
+    amount,
+    ROW_NUMBER() OVER (
+      PARTITION BY customer_id
+      ORDER BY purchase_date
+    ) AS rn
+  FROM purchases
+) AS ranked
+WHERE rn = 1;
+
+```
+
+----------------------------------------------------------------------------
+
