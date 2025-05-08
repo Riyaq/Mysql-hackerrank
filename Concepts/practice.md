@@ -1,5 +1,6 @@
 1. Rank Employees by Salary within Each Department.
-   Table -
+   Table -<br>
+   
   | emp_id | emp_name | department | salary |
 | ------- | --------- | ---------- | ------ |
 | 1       | Alice     | HR         | 60000  |
