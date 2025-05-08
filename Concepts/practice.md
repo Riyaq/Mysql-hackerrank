@@ -29,38 +29,19 @@ Using the same employees table, find the top 2 highest-paid employees from each 
 **Solution 1**
 ```sql
 WITH ranked_employees AS (
-  SELECT
-    emp_id,
-    emp_name,
-    department,
-    salary,
+  SELECT emp_id, emp_name, department, salary,
     RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS salary_rank
-  FROM
-    employees
+  FROM employees
 )
-SELECT
-  emp_id,
-  emp_name,
-  department,
-  salary
-FROM
-  ranked_employees
-WHERE
-  salary_rank <= 2;
+SELECT emp_id, emp_name, department, salary
+FROM ranked_employees
+WHERE salary_rank <= 2;
 ```
 **Solution 2**
 ```sql
-SELECT
-  emp_id,
-  emp_name,
-  department,
-  salary
+SELECT emp_id, emp_name, department, salary
 FROM (
-  SELECT
-    emp_id,
-    emp_name,
-    department,
-    salary,
+  SELECT emp_id, emp_name, department, salary,
     RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS salary_rank
   FROM employees
 ) AS ranked
