@@ -43,6 +43,5 @@ SELECT
 FROM Students
 ORDER BY 
   Grade DESC,
-  IF(Marks >= 70, Name, NULL) ASC,
-  IF(Marks < 70, Marks, NULL) ASC;
+  IF(Marks >= 70, Name, NULL) ASC;
 ```
