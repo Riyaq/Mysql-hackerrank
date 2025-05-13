@@ -18,24 +18,6 @@ Hence I will use INNER JOIN here to build connection/ JOIN with all four table.<
 ## Solution 1
 
 ```sql
-SELECT
-   H.hacker_id,
-   H.name 
-FROM Hackers AS H
-   INNER JOIN Submissions as s on h.hacker_id=s.hacker_id
-   INNER JOIN Challenges as c on s.challenge_id=c.challenge_id
-   INNER JOIN Difficulty as d on c.difficulty_level=d.difficulty_level
-   
-where s.score=d.score
-group by s.hacker_id, name
-having count(s.challenge_id)>1
-order by count(s.challenge_id) desc, S.hacker_id
-
-```
------------
-## Solution 2
-
-```sql
 SELECT 
     h.hacker_id,
     h.name 
@@ -50,7 +32,7 @@ ORDER BY COUNT(s.challenge_id) desc,s.hacker_id;
 ```
 
 -----------
-## Solution 3
+## Solution 2
 ```sql
 SELECT
 S.hacker_id,
