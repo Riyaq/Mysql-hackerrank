@@ -73,13 +73,10 @@ JOIN Hackers h ON (...)             -- Who made this submission?
 ```
 
 6. Quick Decision Checklist
-1. What's the primary data we're evaluating? → Start with that table
-
-2. What context do we need about each record? → Join those tables next
-
-3. What filtering can we do early? → Apply WHERE clauses after necessary joins
-
-4. What do we need for final output? → Join those tables last
+- What's the primary data we're evaluating? → Start with that table
+- What context do we need about each record? → Join those tables next
+- What filtering can we do early? → Apply WHERE clauses after necessary joins
+- What do we need for final output? → Join those tables last
 
 ----------------------------------------------
 
