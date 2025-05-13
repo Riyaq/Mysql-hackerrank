@@ -34,17 +34,17 @@ ORDER BY COUNT(s.challenge_id) desc,s.hacker_id;
 ## Concept
 **How to Decide Table Joining Order in SQL**
 1. Understand the Business Question First
-For the "top competitors" problem, we need:
+   For the "top competitors" problem, we need:
 
-*Hackers who achieved perfect scores
-*On more than one challenge
-*Ordered by challenge count then hacker_id
+* Hackers who achieved perfect scores
+* On more than one challenge
+* Ordered by challenge count then hacker_id
 
 2. Identify the Central Fact Table
 Submissions is your fact table because:
-*It contains the actual scores we're evaluating
-*All other tables provide context about these submissions
-*Most filtering happens based on submission scores
+* It contains the actual scores we're evaluating
+* All other tables provide context about these submissions
+* Most filtering happens based on submission scores
 ```sql
 Submissions → Challenges → Difficulty  (to check perfect scores)
 Submissions → Hackers    (to get hacker names)
