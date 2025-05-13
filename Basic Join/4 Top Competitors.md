@@ -64,7 +64,8 @@ Base Rules:
 - Join Hackers to get the names
 
 5. Applied to Our Problem
-   ```sql
+   
+```sql
 FROM Submissions s                  -- Central fact table
 JOIN Challenges c ON (...)          -- What challenge was this submission for?
 JOIN Difficulty d ON (...)          -- What's the perfect score for this challenge?
