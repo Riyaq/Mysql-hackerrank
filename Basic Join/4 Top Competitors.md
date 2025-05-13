@@ -81,13 +81,12 @@ JOIN Hackers h ON (...)             -- Who made this submission?
 
 4. What do we need for final output? → Join those tables last
 
-
+----------------------------------------------
 
 
 
 <br>
 
------------
 ## Solution 2
 ```sql
 SELECT
