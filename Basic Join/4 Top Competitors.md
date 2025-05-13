@@ -64,12 +64,11 @@ Base Rules:
 - Join Hackers to get the names
 
 5. Applied to Our Problem
-   ```
-   FROM Submissions s                  -- Central fact table
+   ```sql
+FROM Submissions s                  -- Central fact table
 JOIN Challenges c ON (...)          -- What challenge was this submission for?
 JOIN Difficulty d ON (...)          -- What's the perfect score for this challenge?
 JOIN Hackers h ON (...)             -- Who made this submission?
-
 ```
 
 6. Quick Decision Checklist
