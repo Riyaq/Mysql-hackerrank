@@ -69,6 +69,7 @@ Base Rules:
 JOIN Challenges c ON (...)          -- What challenge was this submission for?
 JOIN Difficulty d ON (...)          -- What's the perfect score for this challenge?
 JOIN Hackers h ON (...)             -- Who made this submission?
+
 ```
 
 6. Quick Decision Checklist
@@ -84,11 +85,7 @@ JOIN Hackers h ON (...)             -- Who made this submission?
 
 
 
-
-
-
-
-
+<br>
 
 -----------
 ## Solution 2
