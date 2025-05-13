@@ -45,11 +45,40 @@ Submissions is your fact table because:
 * It contains the actual scores we're evaluating
 * All other tables provide context about these submissions
 * Most filtering happens based on submission scores
+  
+3. Follow the Natural Data Relationships
 ```sql
 Submissions → Challenges → Difficulty  (to check perfect scores)
 Submissions → Hackers    (to get hacker names)
 ```
+4. Join Strategy Rules
+Base Rules:
+> 1. Start with the table containing your primary metrics (Submissions in this case)
 
+> 2. Join dimension tables to add context:
+
+- Join Challenges to understand which challenge was submitted
+
+- Join Difficulty to know what a "perfect score" is for that challenge
+
+- Join Hackers to get the names
+
+5. Applied to Our Problem
+   ```
+   FROM Submissions s                  -- Central fact table
+JOIN Challenges c ON (...)          -- What challenge was this submission for?
+JOIN Difficulty d ON (...)          -- What's the perfect score for this challenge?
+JOIN Hackers h ON (...)             -- Who made this submission?
+```
+
+6. Quick Decision Checklist
+1. What's the primary data we're evaluating? → Start with that table
+
+2. What context do we need about each record? → Join those tables next
+
+3. What filtering can we do early? → Apply WHERE clauses after necessary joins
+
+4. What do we need for final output? → Join those tables last
 
 
 
