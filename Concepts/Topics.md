@@ -1,24 +1,24 @@
-1. SQL Basics (Foundations)
+## 1. SQL Basics (Foundations)
 
--Data Types (INT, VARCHAR, DATE, etc.)
+Data Types (INT, VARCHAR, DATE, etc.)
 
 -CRUD operations (INSERT, UPDATE, DELETE, SELECT)
 
--Filtering (WHERE, BETWEEN, LIKE, IN, IS NULL)
+Filtering (WHERE, BETWEEN, LIKE, IN, IS NULL)
 
--Sorting & limiting (ORDER BY, LIMIT/TOP)
+Sorting & limiting (ORDER BY, LIMIT/TOP)
 
-2. Joins & Relationships
+## 2. Joins & Relationships
 
--Inner Join, Left Join, Right Join, Full Join
+Inner Join, Left Join, Right Join, Full Join
 
--Self Joins
+Self Joins
 
 Understanding Primary Key & Foreign Key
 
 Many-to-many relationships via junction tables
 
-3. Aggregations & Grouping
+## 3. Aggregations & Grouping
 
 Aggregate functions (SUM, COUNT, AVG, MAX, MIN)
 
@@ -26,7 +26,7 @@ GROUP BY & HAVING
 
 Rollup & Cube (for hierarchical/grouped summaries)
 
-4. Subqueries & Derived Tables
+## 4. Subqueries & Derived Tables
 
 Scalar subqueries
 
@@ -36,7 +36,7 @@ EXISTS vs IN
 
 Derived tables (subqueries in FROM)
 
-5. Advanced SQL Concepts
+## 5. Advanced SQL Concepts
 
 Window Functions (Ranking, Running Totals, Moving Averages)
 
@@ -46,7 +46,7 @@ Pivot & Unpivot (cross-tab reporting)
 
 Case expressions (CASE WHEN)
 
-6. Views & Stored Programs
+## 6. Views & Stored Programs
 
 Views (virtual tables)
 
@@ -56,7 +56,7 @@ Stored Procedures & Functions
 
 Triggers
 
-7. Performance Tuning
+## 7. Performance Tuning
 
 Indexing (Clustered, Non-Clustered, Composite, Covering indexes)
 
@@ -66,7 +66,7 @@ Normalization vs Denormalization trade-offs
 
 Partitioning & Sharding (for very large datasets)
 
-8. Transactions & Concurrency
+## 8. Transactions & Concurrency
 
 ACID properties
 
@@ -76,7 +76,7 @@ Isolation levels (Read Uncommitted, Read Committed, Repeatable Read, Serializabl
 
 Deadlocks & Locking mechanisms
 
-9. Security & Data Governance
+## 9. Security & Data Governance
 
 GRANT / REVOKE permissions
 
@@ -84,7 +84,7 @@ Row-level security
 
 Masking sensitive data
 
-10. Practical, Real-World Skills
+## 10. Practical, Real-World Skills
 
 Writing clean & reusable SQL queries
 
